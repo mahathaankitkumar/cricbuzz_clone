@@ -1,0 +1,383 @@
+<html>
+
+<head>
+    <title>
+        Navigation
+    </title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .navigation {
+            background-color: #009270;
+            border-radius: 2px;
+            font-weight: bold;
+            margin: auto;
+            width: 80%;
+        }
+
+        .navigation li {
+            color: white;
+            float: left;
+            list-style: none;
+            margin: 10px 8px;
+            font-size: 18px;
+            font-weight: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+
+
+        }
+
+        .navigation {
+            overflow: auto;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navigation input {
+            float: right;
+            padding: 5px 4px;
+            margin: 2px 5px;
+
+            border-radius: 20px;
+        }
+
+        a:hover {
+            background-color: rgb(64, 96, 64);
+        }
+
+        .navigation1 {
+            background-color: #060a09b9;
+            font-family: Arial, Helvetica, sans-serif;
+
+            margin: auto;
+            width: 80%;
+
+        }
+
+        .navigation1 li {
+            color: white;
+            float: left;
+            list-style: none;
+            margin: 12px 20px;
+            font-size: 14px;
+            font-weight: 30px;
+        }
+
+        .navigation1 {
+            overflow: auto;
+        }
+
+        .navigation1 li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #all {
+
+            padding: 15px 4px;
+            margin: 2px 5px;
+
+        }
+
+        a:hover {
+            background-color: rgba(24, 36, 24, 0.81);
+        }
+
+        #match {
+            background-color: black;
+        }
+
+        .menu {
+            overflow: auto;
+            background-color: white;
+            margin: auto;
+            margin-top: 3px;
+            width: 80%;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        #matches {
+            color: #009270;
+            font-weight: 700;
+            font-size: large;
+            padding-left: 10px;
+            padding-top: 10px;
+
+        }
+
+        .WI {
+            color: gray;
+            font-weight: 300;
+            font-size: medium;
+            margin-left: 20px;
+        }
+
+        .Ind {
+            color: rgb(15, 13, 13);
+            font-weight: 300;
+            font-size: medium;
+            margin-left: 20px;
+        }
+
+        .result {
+            color: rgb(237, 12, 12);
+            font-weight: 300;
+            font-size: small;
+            margin-left: 20px;
+        }
+
+        .content {
+            overflow: auto;
+            background-color: white;
+
+            margin-top: 0px;
+            width: 15%;
+            box-sizing: border-box;
+            display: inline-block;
+            margin-left: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .latest {
+            color: #009270;
+            font-size: large;
+            font-weight: 700;
+
+            background-color: white;
+            margin: 15px;
+
+
+
+        }
+        .cricbuzz{
+            background-color: #009270;
+        }
+
+        .time {
+            margin-left: 15px;
+        }
+
+        .hr {
+            color: gray;
+            font-size: small;
+        }
+
+        .preview {
+            background-color: white;
+
+            margin-top: 3px;
+            width: 40%;
+            padding: 5px;
+            box-sizing: border-box;
+
+            display: inline-block;
+            margin-left: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        .middle {
+            font-weight: bolder;
+            font-size: x-large;
+
+        }
+
+        .class {
+            color: gray;
+        }
+
+        .pant {
+            padding: 4px;
+        }
+
+        .prev {
+            font-size: small;
+            color: gray;
+        }
+
+        .videos {
+            background-color: white;
+
+            margin-top: 3px;
+            width: 25%;
+            padding: 5px;
+            box-sizing: border-box;
+
+            display: inline-block;
+            margin-left: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        .videos {
+            padding: 2px;
+        }
+
+        .surya {
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .featured {
+            color: #009270;
+            font-weight: bolder;
+            margin-left: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="list">
+                <li><img  class="cricbuzz"
+                    src="data:image/png;base64,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"
+                        alt="cricbuzz" height="3%"></li>
+                <li><a href="https://www.cricbuzz.com/">Live scores</a> </li>
+                <li><a href="https://www.cricbuzz.com/">schedule</a></li>
+                <li><a href="https://www.cricbuzz.com/">news</a></li>
+                <li><a href="https://www.cricbuzz.com/">series</a></li>
+                <li><a href="https://www.cricbuzz.com/">Teams</a></li>
+                <li><a href="https://www.cricbuzz.com/">Videos</a> </li>
+                <li><a href="https://www.cricbuzz.com/">Rankings</a> </li>
+                <li><a href="https://www.cricbuzz.com/">More</a> </li>
+                <li><a href="https://www.cricbuzz.com/">Archives</a> </li>
+            </ul>
+            <div class="search">
+                <input type="text" name="search" id="input" placeholder="cricbuzzplus">
+            </div>
+        </nav>
+        <!----->
+        <nav class="navigation1">
+            <ul class="list">
+
+                <div>
+                    <li><a id="match" href="https://www.cricbuzz.com/">Matches</a> </li>
+                </div>
+                <li><a href="https://www.cricbuzz.com/">WI vs IND-result</a></li>
+                <li><a href="https://www.cricbuzz.com/">LKK vs CSG-no result</a></li>
+                <li><a href="https://www.cricbuzz.com/">SC0vsNZ-NZ won</a></li>
+                <li><a href="https://www.cricbuzz.com/">RSA vs ENG-RSA won</a></li>
+                <li><a href="https://www.cricbuzz.com/">BAWvsAUSW-ASWwon</a> </li>
+                <li><a id="all" href="https://www.cricbuzz.com/">ALL</a> </li>
+                <!---<li><a href="https://www.cricbuzz.com/">More</a> </li>--->
+                <!--- <li><a href="https://www.cricbuzz.com/">Archives</a> </li>--->
+            </ul>
+
+        </nav>
+    </header>
+    <div class="menu">
+        <div id="matches">FEATURED MATCHES
+            <p class="WI">WI &nbsp;&nbsp;&nbsp;&nbsp; 168-5(20)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                | &nbsp;AusW 160-2(20)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                | &nbsp;&nbsp; Neatherlands
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                | &nbsp;&nbsp;
+                Ireland
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; WI
+
+            </p>
+            <p class="Ind">IND &nbsp;&nbsp;&nbsp;&nbsp; 170-5(20)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                | &nbsp;NZW 161-7(20)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                | &nbsp;&nbsp; New zealand
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                &nbsp;&nbsp; South
+                Africa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                &nbsp;&nbsp; IND
+
+            </p>
+            <p class="result"> India won by 5 wickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NZW won by 3 wickets
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Today at 8:00 PM
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6th Aug 6:00 PM
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7th Aug 8:00PM</p>
+        </div>
+
+
+    </div>
+    <div class="content">
+
+        <p class="latest">Latest News</p>
+        <p class="time">Tamim bemoans Bangladesh's batting intent and shoddy fielding
+            <br><br><a class="hr" href="https://www.cricbuzz.com/">1hr ago </a>
+            <br>___________________
+            <br><br>Litton Das ruled out of Zimbabwe tour with hamstring injury
+            <br><br><a class="hr" href="https://www.cricbuzz.com/">2hr ago</a>
+
+            <br>____________________
+            <br><br>Tamim gets behind the ODI format
+            <br><br c><a class="hr" href="https://www.cricbuzz.com/">1 day ago</a>
+            <br>____________________
+            <br><br>BCB to investigate Shakib's social media post pertaining to Betwinner News
+            <br><br><a class="hr" href="https://www.cricbuzz.com/">1 day ago</a>
+            <br>____________________
+            <br><br>Zimbabwe name Chakabva as captain for Bangladesh ODIs
+            <br><br><a class="hr" href="https://www.cricbuzz.com/">1 day ago</a>
+            <br>____________________
+            
+
+
+        </p>
+
+
+
+    </div>
+    <div class="preview">
+        <p class="prev"> IND vs WI T20Is Previews </p>
+        <img class="pant" src=" https://www.cricbuzz.com/a/img/v1/420x235/i1/c240144/middle-order-defects-to-work-o.jpg" alt="loading" width="92%" height="50%">
+        <p class="middle">Middle order defects to work on as WI seek series parity in Florida leg</p>
+        <p class="hosts">The hosts are down 1-2 in the five-match T20I series as they move base to Florida for the last
+            two games of
+            the series</p>
+        <p><a
+                href="https://www.cricbuzz.com/cricket-news/123328/florida-t20is-india-wi-obtain-us-visas-after-guyana-presidents-intervention">
+                Florida T20Is: India, WI obtain US visas after Guyana President's intervention</p></a>
+        <p><a href="https://www.cricbuzz.com/cricket-news/123324/can-bowl-4-overs-as-third-or-fourth-seamer-hardik">Can
+                bowl 4 overs as third or fourth seamer: Hardik</p></a>
+        <p><a href="https://www.cricbuzz.com/cricket-news/123320/india-grapple-with-an-avesh-khan-dilemma">India grapple
+                with an Avesh Khan dilemma</p></a>
+
+    </div>
+    <div class="videos">
+        <p class="featured">Featured Videos</p>
+        <p><a
+                href="https://www.cricbuzz.com/cricket-videos/56845/suryakumar-yadavs-confidence-currently-makes-him-invincible-harsha-bhogle"><img
+                    src="https://www.cricbuzz.com/a/img/v1/220x124/i1/c240102/cms-img.jpg" width="90%" height="31%"></a>
+        </p>
+        <p class="surya">Surya's current form making his position more stronger in Indian Team: Harsha Bhogle</p>
+        <p><a
+                href="https://www.cricbuzz.com/cricket-videos/56852/retro-reels-episode-19-ashes-05-classic-bindra-neeraj-bring-gold"><img
+                    src="https://www.cricbuzz.com/a/img/v1/290x164/i1/c240138/retro-reels-episode-19-ashes.jpg" alt=""
+                    width="90%" height="31%"></a></p>
+        <p class="surya">
+            Retro Reels, Episode 19: Ashes 05' classic, Bindra & Neeraj bring 'Gold'</p>
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>
